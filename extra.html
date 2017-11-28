@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My JS LabSite</title>
+    <link href="styles/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet" >
+</head>
+<body bgcolor="#E6E6FA">
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Start</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="Uppgifter5.html">Uppgifter5</a>
+                </li>
+                <li>
+                    <a href="extra.html">Extra</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Page Content -->
+<div class="container">
+    <!-- Title -->
+    <div class="row">
+        <div class="col-lg-12" style="padding:100px 0px 0px 0px">
+    
+            <!-- Labba här nedan med den HTML du behöver skriva in -->
+            <!-- Utkommentera de övningar du blir klara med, för att undvika eventuella krockar t ex om samma ID/Class namn används för fler övningar -->
+    
+         <h4 class="row">TEMPERATURE CONVERSION</h4>
+            <form class="row">
+                <input id="inputId" type="number" name="input">
+                <select id="mySelect">
+                    <option>Celcius(C)</option>
+                    <option>Fahrenheit(F)</option>
+                    <option>Kelvin</option>
+                    <option>Rankine</option>
+                </select>
+            </form>
+            <button onclick="myFunction()" class="row">Convert!</button>
+            <br>
+            <!-- Labba här nedan med den HTML du behöver skriva in -->
+            <table class="row">
+                <tr style="background-color:rgba(128, 255, 0, 0.404)" >
+                    <th>Temperature</th>
+                    <th>Conversion</th>
+                </tr>
+                <tr>
+                    <td>Celcius(C)</td>
+                    <td id="out1"></td>
+                </tr>
+                <tr>
+                    <td>Fahrenheit(F)</td>
+                    <td id="out2"></td>
+                </tr>
+                <tr>
+                    <td>Kelvin</td>
+                    <td id="out3"></td>
+                </tr>
+                <tr>
+                    <td>Rankine</td>
+                    <td id="out4"></td>
+                </tr>
+            </table>
+            <!-- Slut labba här nedan -->
+        </div>
+    </div>
+    <hr>
+<div class="container">
+        <h4 class="row">Calculator</h4>
+    <form>
+        <table style="border: 3px solid rgb(153, 0, 255)">
+
+            <tr>
+                <td colspan="4" align="center" style=" background-color:rgb(199, 190, 190); height:30px;">
+                    <div id="demo">
+                        <h4></h4>
+                    </div>
+                    <!--  <input type="text" name="display" id=""> -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="one" value="1" onclick="AddDigit('1')">
+                </td>
+                <td>
+                    <input type="button" name="two" value="2" onclick="AddDigit('2')">
+                </td>
+                <td>
+                    <input type="button" name="three" value="3" onclick="AddDigit('3')">
+                </td>
+                <td>
+                    <input type="button" name="plus" value="+" onclick="Operate('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="four" value="4" onclick="AddDigit('4')">
+                </td>
+                <td>
+                    <input type="button" name="five" value="5" onclick="AddDigit('5')">
+                </td>
+                <td>
+                    <input type="button" name="six" value="6" onclick="AddDigit('6')">
+                </td>
+                <td>
+                    <input type="button" class="operator" name="minus" value="-" onclick="Operate('-')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="seven" value="7" onclick="AddDigit('7')">
+                </td>
+                <td>
+                    <input type="button" name="eight" value="8" onclick="AddDigit('8')">
+                </td>
+                <td>
+                    <input type="button" name="nine" value="9" onclick="AddDigit('9')">
+                </td>
+                <td>
+                    <input type="button" class="operator" name="multiply" value="*" onclick="Operate('*')">
+                </td>
+            </tr>
+            <tr >
+                <td>
+                    <input type="button" name="clear" value="C" onclick="Clear()">
+                </td>
+                <td>
+                    <input type="button" name="zreo" value="0" onclick="AddDigit('0')">
+                </td>
+                <td>
+                    <input type="button" name="equal" value="=" onclick="Calculate()">
+                </td>
+                <td>
+                    <input type="button" class="operator" name="divide" value="/" onclick="Operate('/')">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Shujat Ali - JS övningar </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- jQuery -->
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<!-- custom JS -->
+<script type="text/javascript" src="scripts/custom4.js"></script>
+</body>
+</html>

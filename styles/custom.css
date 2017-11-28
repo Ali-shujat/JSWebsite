@@ -1,0 +1,33 @@
+
+/*
+  
+
+  \o/
+   | 
+  / \
+
+  */
+
+  tr {
+ width: 200px;
+ text-align: center;
+}
+
+table, td, th {
+    border: 2px solid rgb(153, 151, 151);
+    margin: 5px;
+    padding: 5px;
+}
+  #jojo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(199, 196, 196);
+    border: 2px solid rgb(80, 43, 72);
+    border-radius: 2px;
+    width: 100%;
+    
+  }
+#rndBgrnd {
+  width: 200px;
+  height: 200px;
+}
+

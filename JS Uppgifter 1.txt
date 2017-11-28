@@ -1,0 +1,12 @@
+﻿
+
+var Today = new Date();
+var hourNow = Today.getHours();
+
+if (hournow > 15) {
+    greeting = 'Kl är 15 eller mer nu..';
+}
+else {
+    greeting = 'Klockan har inte hunnit blivit 15 än..';
+}
+document.write('<h2>' + greeting + '</h2>');
